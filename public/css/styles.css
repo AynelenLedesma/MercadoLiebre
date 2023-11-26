@@ -148,6 +148,12 @@ div.offers{
 h3,
 .description{
     color: #666;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+h3:hover {
+    opacity: 1;
 }
 
 .description{
@@ -176,6 +182,7 @@ main section article img{
 main section article i,
 .discount{
     color: #39b54a;
+    transition: transform 0.3s ease;
 }
 
 main section article i{
@@ -230,7 +237,7 @@ article div.main-article{
 }
 
 .icon:hover {
-    color: #1259c3;
+    color:   #39ec21;
 }
 
 .title {
