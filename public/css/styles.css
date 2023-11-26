@@ -148,12 +148,6 @@ div.offers{
 h3,
 .description{
     color: #666;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
-
-h3:hover {
-    opacity: 1;
 }
 
 .description{
@@ -182,7 +176,6 @@ main section article img{
 main section article i,
 .discount{
     color: #39b54a;
-    transition: transform 0.3s ease;
 }
 
 main section article i{
@@ -213,7 +206,36 @@ article div.main-article{
     padding: 15px;
 }
 
-
+.article {
+    position: relative;
+}
+  
+.description {
+opacity: 0; 
+transition: opacity 0.3s ease; 
+}
+  
+.article:hover .description {
+    opacity: 1; 
+}
+  
+.article {
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+transition: box-shadow 0.3s ease; 
+}
+  
+.article:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
+}
+  
+  
+.main-article i {
+    transition: transform 0.3s ease; 
+}
+  
+.article:hover .main-article i {
+    transform: rotate(-90deg); 
+}
 
 .footer {
     background-color: rgb(236, 236, 236);
