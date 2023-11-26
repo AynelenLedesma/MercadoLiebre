@@ -206,35 +206,34 @@ article div.main-article{
     padding: 15px;
 }
 
-.article {
+.main-article {
     position: relative;
 }
   
 .description {
-opacity: 0; 
-transition: opacity 0.3s ease; 
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
 }
   
-.article:hover .description {
+.main-article:hover .description {
     opacity: 1; 
 }
-  
-.article {
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-transition: box-shadow 0.3s ease; 
-}
-  
-.article:hover {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
-}
-  
   
 .main-article i {
     transition: transform 0.3s ease; 
 }
   
-.article:hover .main-article i {
+.main-article:hover i {
     transform: rotate(-90deg); 
+}
+
+.products article {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    transition: box-shadow 0.3s ease; 
+}
+  
+.products article:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
 }
 
 .footer {
@@ -259,7 +258,7 @@ transition: box-shadow 0.3s ease;
 }
 
 .icon:hover {
-    color:   #39ec21;
+    color: #39ec21;
 }
 
 .title {
@@ -384,6 +383,10 @@ transition: box-shadow 0.3s ease;
         width: 22%;
     }
 }
+
+
+
+
 
 
 
