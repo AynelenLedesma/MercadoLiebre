@@ -241,14 +241,6 @@ h6{
 
 @media (min-width: 361px) {
 
-   header nav,
-    .nav__items,
-    .menu-container,
-    .menu li {
-        
-        display: none;
-    }
-
     main section article .description {
         display: block;
     }
@@ -287,7 +279,7 @@ h6{
     .menu-container,
     .menu li {
         
-        display: flex;
+        display: none;
     }
 
     
@@ -301,7 +293,7 @@ h6{
     }
 
     .icon-container {
-        margin: 10px 0;
+        margin: 10px ;
     }
 
     .copyright {
