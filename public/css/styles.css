@@ -318,7 +318,7 @@ article div.main-article{
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 360px) {
     header nav,
     .nav__items,
     .menu-container,
