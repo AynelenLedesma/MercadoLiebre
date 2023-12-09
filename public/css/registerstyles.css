@@ -1,111 +1,68 @@
-*{
-    margin: 0px;
-    padding: 0px;    
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-
-body{
+  
+body {
     font-family: 'Roboto', sans-serif;
     background-color: #ebebeb;
 }
-
-h3{
-    font-size: 24px;
-}
-
-p{
-    font-size: 15px;
-    
-}
-
-div.top-header{
+  
+div.top-header {
     display: flex;
     flex-wrap: wrap;
     padding: 1em;
-    justify-content: space-around;
 }
-
-header div.top-header p{
-    width: 30%;
-    text-align: center;
-    margin-top: 35px;
-    
-}
-
-header{
+  
+header {
     background-color: #EAC926;
     padding: 15px;
 }
+  
 
-
-header .form{
-    width: 20%;
-}
-
-.logo__container {
-    text-align: left;
-}
-
-header div.logo{
-    padding: 10px;
+form[name="form1"] {
     width: 50%;
-    margin-bottom: 5px;
-   
-}
-
-.logo {
-    max-width: 270px;
-}
-
-header .form{
     display: flex;
     align-items: center;
-    padding: 2px;
-    font-size: 15px;
-    justify-content: center;
-    margin: auto; 
-}
-
-
-
-
-.menu-container {
-    display: flex;
-    justify-content: space-between;
-    font-size: 15px;
-}
-.menu {
-    list-style-type: none;
-    padding: 0;
+    
 }
   
-.menu li {
-    display: inline-block;
-    margin-right: 20px; 
+.logo {
+    width: 50%;
+
+}
+    
+input[type="search"] {
+    width: 85%;
+    padding: 2px;
+    
+}
+  
+button {
+    width:15%;
+    padding: 2px;
+    
 }
 
-header .form .input{
-    background-color: #FFF;
-    border: 1px solid #000;
-    outline: none;
-    color: #666;
-    padding: 0.1rem;
-   
+
+p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 15px;
+    width: 100%;
+}
+  
+.menu-container {
+    display: none;
 }
 
-header .form .submit{
-    background-color: #FFF;
-    border: 1px solid #000;
-    color: #666;
-    padding: 0.1rem;
-}
-
-div.burger-menu{
+div.burger-menu {
     text-align: center;
 }
 
-div.burger-menu i{
-    background-color:#03264C;
+div.burger-menu i {
+    background-color: #03264C;
     border-radius: 5px;
     color: #FFF;
     font-size: 20px;
@@ -113,313 +70,452 @@ div.burger-menu i{
     margin: 10px 0px 20px 0px;
     padding: 10px;
     width: 40px;
+    cursor: pointer;
 }
-/* Registro*/
+
+
 
 main.register {
-    max-width: 600px;
-    margin: 50px auto; 
-    padding: 20px;
+    width: 100%;
+    padding: 10px;
     background-color: #f0eeee;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border: 2px solid #000;
 }
-main.register input {
-    width: 100%;
-    padding: 10px;
-    border-radius: 20px;
-    margin-top: 20px;
-    font-size: 20px;
-}
 
-main.register label {
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 20px;
-    margin-top: 20px;
-}
-
+main.register input,
+main.register label,
 main.register input[type="submit"],
 main.register input[type="reset"] {
-    background-color: #3498db;
-    color: #fff;
+    width: 100%;
+    font-size: 16px;
     padding: 10px;
-    border: none;
     border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
-}
-
-main.register label[for="birth_date"] b {
-    font-size: 35px;
-    margin-left: 115px;
-}
-
-main.register input[type="submit"]:hover,
-main.register input[type="reset"]:hover {
-    background-color: #2980b9; 
-}
-
-
-main.register h4 {
-    font-size: 28px; 
-    margin-bottom: 15px; 
+    margin-top: 10px;
+    margin: center;
 }
 
 .profile {
     display: flex;
     align-items: center;
-    margin-top: 10px;
 }
 
 .profile input[type="radio"] {
-    margin-left: 0px; 
-    width: 70px; 
-    height: 70px; 
+    width: 80px;
+    height: 80px;
+    margin-right: 5px; /* Ajusta el espacio entre el botón de opción y el texto */
 }
 
 .profile label {
-    font-size: 1px;
+    width: auto; /* Deja que el ancho del texto se ajuste automáticamente */
+    margin-top: 5px; /* Ajusta el espacio entre el botón de opción y el texto */
 }
 
 
-.profile label {
-    font-size: 30px;
-}
+
 
 h4 {
-    font-size: 5px;
-    color: black;
+    font-size: 20px;
+    margin-top: 10px;
     text-align: center;
-    margin-top: 15px;
+    margin-bottom: 20px;
 
-}
-
-
-.interests {
-    margin-top: 20px; 
-}
-
-.interests div {
-    margin-bottom: 10px; 
-    display: flex; 
-    align-items: center;
 }
 
 .interests input[type="checkbox"] {
-    margin-left: 0; 
-    margin-top: 20px; 
-    height: 40px; 
+    height: 30px;
+    margin-bottom: 5px; 
+
 }
 
 .interests label {
-    font-size: 25px;
-    color: #555;
-    cursor: pointer;
-    margin-left: -50px; 
+    width: auto; /* Deja que el ancho del texto se ajuste automáticamente */
+}
+.interests div {
+    width: 100%; /* O ajusta el ancho según tus necesidades */
+    display: flex;
+    align-items: center;
+    margin: 10px 0; /* Ajusta el espacio entre los elementos */
 }
 
 h5 {
     text-align: center;
-    margin-top: -10px;
-    font-size: 20px;
+    margin-top: 0px;
+    font-size: 16px;
 }
-
 
 .enlace-login {
     text-decoration: underline;
-    color: black
+    color: black;
 }
 
-/*Pie de pagina*/
-
-.footer {
-    background-color: rgb(236, 236, 236);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap; 
-    padding: 20px;
+footer {
+    background-color: white;
 }
   
-.icon-container {
+footer div {
     text-align: center;
-    flex: 1; 
-    margin: 10px; 
+    padding: 5px;
 }
   
-.icon {
+footer div .icon {
     font-size: 2em;
-    color: #2c5caf;
-    transition: color 0.3s;
+    color: #1259c3;
 }
-  
 .icon:hover {
     color: #39ec21;
 }
-  
-.title {
+
+footer div .title {
     font-weight: bold;
     font-size: 1.5em;
+    color: #666;
 }
   
-.info {
+footer div .description {
     font-size: 1em;
     color: #666;
-    text-align: center;
-    max-width: 350px;
-     margin: 0 auto;
 }
 
-.copyright {
-    font-size: 15px;
-    color: #666;
-    text-align: left;
-    padding: 10px;
-    width: 100%;
-    order: 1; 
-    margin-left: 20px;
-    margin-top: 20px
-}
-
-
-
-
-@media (min-width: 361px) {
-    main section article .description {
+@media (min-width: 361px){ 
+    
+    main section article .description{
         display: block;
     }
 
-    main section article {
+    main section article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 
-    main section div.products {
+    main section div.products{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: flex-start;
+        padding: 2rem;
     }
-
-    main section div.products article {
+    
+    main section div.products article{
         width: 45%;
     }
 
     .price,
-    .discount {
+    .discount{
         width: 50%;
-    }
-
-    header .burger-menu {
-        display: none;
-    }
-}
-
-
-@media (max-width: 360px) {
-    
-    header nav,
-    .nav__items,
-    .menu-container,
-    .menu li {
-        
-        display: none;
-    }
-
-    
-    header .burger-menu {
-        display: block;
-    }
+    } 
 
     .footer {
-        flex-direction: column;
-        text-align: center;
+        background-color: rgb(236, 236, 236);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 20px;
     }
 
     .icon-container {
-        margin: 10px 0;
+        text-align: center;
+        flex: 1;
+        margin: 10px;
     }
-
+    
+    .icon {
+        font-size: 2em;
+        color: #2c5caf;
+        transition: color 0.3s;
+    }
+    
+    .icon:hover {
+        color: #39ec21;
+    }
+    
+    .title {
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+    
+    .info {
+        font-size: 1em;
+        color: #666;
+        text-align: center;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    
     .copyright {
-        order: 2;
-        margin-left: 0;
-        margin-top: 10px;
+        font-size: 15px;
+        color: #666;
+        text-align: left;
+        padding: 10px;
+        width: 100%;
+        order: 1;
+        margin-left: 20px;
+        margin-top: 20px;
+    }  
+      
+    header .burger-menu {
+        display: none;
     }
 
-    header .form {
+    .menu-container {
         display: flex;
-        align-items: right; 
-        font-size: 20px;
-        margin: auto;
-        width: 80%; 
+        justify-content: space-between;
+        font-size: 15px;
+    }
+    .menu {
+        list-style-type: none;
+        padding: 0;
+        justify-content: space-between;
+    }
+      
+    .menu li {
+        display: inline-block;
+        padding: 5px;
+    }
+    
+    .logo {
+        width: 33%;
+        /*max-width: 270px;*/
+        /*margin-right: 50px;*/
+    }
+
+    form[name="form1"]{
+        width: 34%;
+        box-sizing: border-box;
+        font-size: 16px; 
+    }
+    
+    p{
+        font-size: 10px;
+        width: 33%;
+        align-self: center;
+    }
+
+    input[type="search"]{
+        max-width: 300px;
     }
     
     main.register {
-        width: 100%; 
-        margin: 50px 10px;
-    }
-
-    header .form {
-        display: flex;
-        align-items: right; 
-        padding: 2px;
-        font-size: 15px;
-        margin: auto;
-        width: 50%; 
-    }
-
-    header div.top-header p{
         width: 100%;
+        max-width: 400px; /* Ajusta el ancho máximo según tus necesidades */
+        box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+        padding: 10px;
+        background-color: #f0eeee;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border: 1px solid #000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto; /* Centra horizontalmente */
+        margin-top: 50px; /* Ajusta el margen superior según tus necesidades */
+    }
+    
+    main.register input,
+    main.register label,
+    main.register input[type="submit"],
+    main.register input[type="reset"] {
+        width: 100%; /* Ajusta el ancho para compensar el padding */
+        font-size: 16px;
+        padding: 10px;
+        border-radius: 20px;
+        margin-top: 10px;
+    }
+    
+    .profile input[type="radio"] {
+        width: 60px;
+        height: 60px;
+        margin-right: 5px;
+    }
+    
+    .interests input[type="checkbox"] {
+        height: 30px;
+        margin-bottom: 5px;
+    }
+    
+    .interests div {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+    }
+    
+    h5 {
         text-align: center;
-        margin-top: 35px;
+        margin-top: 0px;
+        font-size: 16px;
+    }
+    
+    .enlace-login {
+        text-decoration: underline;
+        color: black;
+    }
+    
+    
+}
+
+@media (min-width: 769px){
+    main section div.products article{
+        width: 22%;
+    }
+
+    .footer {
+        background-color: rgb(236, 236, 236);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    .icon-container {
+        text-align: center;
+        flex: 1;
+        margin: 10px;
+    }
+    
+    .icon {
+        font-size: 2em;
+        color: #2c5caf;
+        transition: color 0.3s;
+    }
+    
+    .icon:hover {
+        color: #39ec21;
+    }
+    
+    .title {
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+    
+    .info {
+        font-size: 1em;
+        color: #666;
+        text-align: center;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    
+    .copyright {
+        font-size: 15px;
+        color: #666;
+        text-align: left;
+        padding: 10px;
+        width: 100%;
+        order: 1;
+        margin-left: 20px;
+        margin-top: 20px;
+    }    
+
+    header .burger-menu {
+        display: none;
+    }
+
+    .menu-container {
+        display: flex;
+        justify-content: space-between;
+        font-size: 15px;
+    }
+    .menu {
+        list-style-type: none;
+        padding: 0;
+        justify-content: space-between;
+    }
+      
+    .menu li {
+        display: inline-block;
+        padding: 5px;
+    }
+    
+    .logo {
+        width: 33%;
+        /*max-width: 270px;*/
+        /*margin-right: 50px;*/
+    }
+
+    form[name="form1"]{
+        width: 34%;
+        box-sizing: border-box;
+        font-size: 16px; 
+        justify-content: center;
+
+    }
+
+    input[type="search"]{
+       max-width: 500px;
+    }
+
+    button{
+        max-width: 30px;
+    }
+    
+    p{
+        font-size: 12px;
+        width: 33%;
+        align-self: center;
     }
 
     main.register {
-        max-width: 400px;
-        margin: 50px auto; 
+        width: 50%; /* Ajusta el ancho según tus necesidades */
+        max-width: 500px; /* Ajusta el ancho máximo según tus necesidades */
+        box-sizing: border-box;
         padding: 20px;
         background-color: #f0eeee;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         border: 2px solid #000;
-        }
-
-}
-
-
-@media (min-width: 769px) {
-    
-    header .site-navbar,
-    header .login-navbar {
         display: flex;
+        flex-direction: column; /* Cambiado a dirección de columna */
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin-top: 50px;
     }
 
-   
-    header .burger-menu {
-        display: none;
+    main.register input,
+    main.register label,
+    main.register input[type="submit"],
+    main.register input[type="reset"] {
+        width: 100%;
+        font-size: 16px;
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 10px;
+        
+        
     }
 
-    .form__register {
-        background-color: #ebebeb;
-        width: 40%;
-        margin: 0 auto;
-        padding: 1rem;
+    .profile input[type="radio"] {
+        width: 80px;
+        height: 80px;
+        margin-right: 5px;
     }
 
-    .form__login {
-        width: 40%;
+    .interests input[type="checkbox"] {
+        height: 30px;
+        margin-bottom: 5px;
     }
 
-    main section div.products article {
-        width: 22%;
+    .interests div {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
     }
 
+    h5 {
+        text-align: center;
+        margin-top: 0px;
+        font-size: 16px;
+    }
+
+    .enlace-login {
+        text-decoration: underline;
+        color: black;
+    }
+    
+    
 }
-
-
-
-
-

@@ -16,11 +16,14 @@
             <div class="logo">
                 <img src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
             </div>
-            <div class="form" action="#" method="GET">
-                <div class="input">Buscar productos, marcas y más</div>
-                <div class="submit"><i class="fa fa-search"></i></div>
-            </div>
-            <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+            <form name="form1" class="form" action="#" method="GET">
+                <input type="search" placeholder="Buscar productos, marcas y más"></input>
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+              <p>
+                <i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta
+                de crédito 
+              </p>
         </div>
         <nav class="menu-container">
             <ul class="menu">
@@ -46,7 +49,7 @@
             <h5>¿No eres miembro todavía? <a href="/register" class="enlace-login">Crear una cuenta</a></h5>
             <input type="text" name="user" placeholder="Nombre de usuario">
             <h6>Por favor, rellenar este campo*</h6>
-            <input type="password" name="pass" placeholder="Elija tu contraseña">
+            <input type="password" name="pass" placeholder="Contraseña">
             <input type="submit" value="Enviar">
         </form>
     </main>

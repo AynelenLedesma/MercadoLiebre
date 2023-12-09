@@ -1,111 +1,68 @@
-*{
-    margin: 0px;
-    padding: 0px;    
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-
-body{
+  
+body {
     font-family: 'Roboto', sans-serif;
     background-color: #ebebeb;
 }
-
-h3{
-    font-size: 24px;
-}
-
-p{
-    font-size: 15px;
-    
-}
-
-div.top-header{
+  
+div.top-header {
     display: flex;
     flex-wrap: wrap;
     padding: 1em;
-    justify-content: space-around;
 }
-
-header div.top-header p{
-    width: 30%;
-    text-align: center;
-    margin-top: 35px;
-    
-}
-
-header{
+  
+header {
     background-color: #EAC926;
     padding: 15px;
 }
+  
 
-
-header .form{
-    width: 20%;
-}
-
-.logo__container {
-    text-align: left;
-}
-
-header div.logo{
-    padding: 10px;
+form[name="form1"] {
     width: 50%;
-    margin-bottom: 5px;
-   
-}
-
-.logo {
-    max-width: 270px;
-}
-
-header .form{
     display: flex;
     align-items: center;
-    padding: 2px;
-    font-size: 15px;
-    justify-content: center;
-    margin: auto; 
-}
-
-
-
-
-.menu-container {
-    display: flex;
-    justify-content: space-between;
-    font-size: 15px;
-}
-.menu {
-    list-style-type: none;
-    padding: 0;
+    
 }
   
-.menu li {
-    display: inline-block;
-    margin-right: 20px; 
+.logo {
+    width: 50%;
+
+}
+    
+input[type="search"] {
+    width: 85%;
+    padding: 2px;
+    
+}
+  
+button {
+    width:15%;
+    padding: 2px;
+    
 }
 
-header .form .input{
-    background-color: #FFF;
-    border: 1px solid #000;
-    outline: none;
-    color: #666;
-    padding: 0.1rem;
-   
+
+p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 15px;
+    width: 100%;
+}
+  
+.menu-container {
+    display: none;
 }
 
-header .form .submit{
-    background-color: #FFF;
-    border: 1px solid #000;
-    color: #666;
-    padding: 0.1rem;
-}
-
-div.burger-menu{
+div.burger-menu {
     text-align: center;
 }
 
-div.burger-menu i{
-    background-color:#03264C;
+div.burger-menu i {
+    background-color: #03264C;
     border-radius: 5px;
     color: #FFF;
     font-size: 20px;
@@ -113,238 +70,321 @@ div.burger-menu i{
     margin: 10px 0px 20px 0px;
     padding: 10px;
     width: 40px;
-}
-
-
-
-
-
-
-main.login {
-    max-width: 500px;
-    margin: 50px auto; 
-    padding: 20px;
-    background-color: #f0eeee;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 50px;
-    transform-origin: top left;
-    border: 2px solid #000;
-}
-
-main.login input {
-    width: 100%;
-    padding: 10px;
-    border-radius: 20px;
-    margin-top: 20px;
-    font-size: 20px;
-}
-
-main.login input[type="submit"] {
-    background-color: #3498db;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
     cursor: pointer;
 }
 
-main.login input[type="submit"]:hover {
-    background-color: #0022AA;
+
+/* Estilos del formulario de inicio de sesión para dispositivos móviles */
+.login {
+    max-width: 360px;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #000000; /* Añadido borde */
+    border-radius: 10px; 
 }
 
-h4 {
-    font-size: 35px;
-    color: black;
-    text-align: center;
-    margin-top: 15px;
-}
-
-h5 {
+.login h4 {
     text-align: center;
     font-size: 20px;
+    margin-bottom: 15px;
 }
 
-.enlace-login {
-    text-decoration: underline;
-    color: black;
+.login h5 {
+    font-size: 12px;
+    margin-bottom: 10px;
 }
 
-h6{
-    font-size: 15px;
-    color: red
-    
+.login a.enlace-login {
+    color: #3498db;
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    border: 2px solid #000;
+}
+
+.login h6 {
+    font-size: 10px;
+    color: #e74c3c;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.login input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.login input[type="submit"]:hover {
+    background-color: #2980b9;
 }
 
 
-
-
-.footer {
-    background-color: rgb(236, 236, 236);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 20px;
+footer {
+    background-color: white;
 }
-
-.icon-container {
+  
+footer div {
     text-align: center;
-    flex: 1;
-    margin: 10px;
+    padding: 5px;
 }
-
-.icon {
+  
+footer div .icon {
     font-size: 2em;
-    color: #2c5caf;
-    transition: color 0.3s;
+    color: #1259c3;
 }
-
 .icon:hover {
     color: #39ec21;
 }
 
-.title {
+footer div .title {
     font-weight: bold;
     font-size: 1.5em;
+    color: #666;
 }
-
-.info {
+  
+footer div .description {
     font-size: 1em;
     color: #666;
-    text-align: center;
-    max-width: 350px;
-    margin: 0 auto;
-}
-
-.copyright {
-    font-size: 15px;
-    color: #666;
-    text-align: left;
-    padding: 10px;
-    width: 100%;
-    order: 1;
-    margin-left: 20px;
-    margin-top: 20px;
 }
 
 
-
-
-@media (min-width: 361px) {
-    main section article .description {
+@media (min-width: 361px){ 
+    
+    main section article .description{
         display: block;
     }
 
-    main section article {
+    main section article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 
-    main section div.products {
+    main section div.products{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: flex-start;
+        padding: 2rem;
     }
-
-    main section div.products article {
+    
+    main section div.products article{
         width: 45%;
     }
 
     .price,
-    .discount {
+    .discount{
         width: 50%;
-    }
-
-    header .burger-menu {
-        display: none;
-    }
-}
-
-
-@media (max-width: 360px) {
-    
-    header nav,
-    .nav__items,
-    .menu-container,
-    .menu li {
-        
-        display: none;
-    }
-
-    
-    header .burger-menu {
-        display: block;
-    }
+    } 
 
     .footer {
-        flex-direction: column;
-        text-align: center;
+        background-color: rgb(236, 236, 236);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 20px;
     }
 
     .icon-container {
-        margin: 10px ;
-    }
-
-    .copyright {
-        order: 2;
-        margin-left: 0;
-        margin-top: 10px;
-    }
-
-    header .form {
-        display: flex;
-        align-items: right; 
-        font-size: 20px;
-        margin: auto;
-        width: 80%; 
-    }
-
-    header .form {
-        display: flex;
-        align-items: right; 
-        padding: 2px;
-        font-size: 15px;
-        margin: auto;
-        width: 50%; 
-    }
-
-    header div.top-header p{
-        width: 100%;
         text-align: center;
-        margin-top: 35px;
+        flex: 1;
+        margin: 10px;
     }
-}
-
-
-@media (min-width: 769px) {
     
-    header .site-navbar,
-    header .login-navbar {
-        display: flex;
+    .icon {
+        font-size: 2em;
+        color: #2c5caf;
+        transition: color 0.3s;
     }
-
-   
+    
+    .icon:hover {
+        color: #39ec21;
+    }
+    
+    .title {
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+    
+    .info {
+        font-size: 1em;
+        color: #666;
+        text-align: center;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    
+    .copyright {
+        font-size: 15px;
+        color: #666;
+        text-align: left;
+        padding: 10px;
+        width: 100%;
+        order: 1;
+        margin-left: 20px;
+        margin-top: 20px;
+    }  
+      
     header .burger-menu {
         display: none;
     }
 
-    .form__register {
-        background-color: #ebebeb;
-        width: 40%;
-        margin: 0 auto;
-        padding: 1rem;
+    .menu-container {
+        display: flex;
+        justify-content: space-between;
+        font-size: 15px;
+    }
+    .menu {
+        list-style-type: none;
+        padding: 0;
+        justify-content: space-between;
+    }
+      
+    .menu li {
+        display: inline-block;
+        padding: 5px;
+    }
+    
+    .logo {
+        width: 33%;
+        /*max-width: 270px;*/
+        /*margin-right: 50px;*/
     }
 
-    .form__login {
-        width: 40%;
+    form[name="form1"]{
+        width: 34%;
+        box-sizing: border-box;
+        font-size: 16px; 
+    }
+    
+    p{
+        font-size: 10px;
+        width: 33%;
+        align-self: center;
     }
 
-    main section div.products article {
+  
+
+}
+
+@media (min-width: 769px){
+    main section div.products article{
         width: 22%;
     }
 
+    .footer {
+        background-color: rgb(236, 236, 236);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    .icon-container {
+        text-align: center;
+        flex: 1;
+        margin: 10px;
+    }
+    
+    .icon {
+        font-size: 2em;
+        color: #2c5caf;
+        transition: color 0.3s;
+    }
+    
+    .icon:hover {
+        color: #39ec21;
+    }
+    
+    .title {
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+    
+    .info {
+        font-size: 1em;
+        color: #666;
+        text-align: center;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    
+    .copyright {
+        font-size: 15px;
+        color: #666;
+        text-align: left;
+        padding: 10px;
+        width: 100%;
+        order: 1;
+        margin-left: 20px;
+        margin-top: 20px;
+    }    
+
+    header .burger-menu {
+        display: none;
+    }
+
+    .menu-container {
+        display: flex;
+        justify-content: space-between;
+        font-size: 15px;
+    }
+    .menu {
+        list-style-type: none;
+        padding: 0;
+        justify-content: space-between;
+    }
+      
+    .menu li {
+        display: inline-block;
+        padding: 5px;
+    }
+    
+    .logo {
+        width: 33%;
+        /*max-width: 270px;*/
+        /*margin-right: 50px;*/
+    }
+
+    form[name="form1"]{
+        width: 34%;
+        box-sizing: border-box;
+        font-size: 16px; 
+        justify-content: center;
+
+    }
+
+    input{
+       max-width: 500px;
+    }
+
+    button{
+        max-width: 30px;
+    }
+    
+    p{
+        font-size: 12px;
+        width: 33%;
+        align-self: center;
+    }
+    
+    
 }
 
 
